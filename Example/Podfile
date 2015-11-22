@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'MomentsGallery_Example', :exclusive => true do
+  pod "MomentsGallery", :path => "../"
+end
+
+target 'MomentsGallery_Tests', :exclusive => true do
+  pod "MomentsGallery", :path => "../"
+
+  
+end
