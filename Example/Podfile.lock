@@ -1,0 +1,14 @@
+PODS:
+  - MomentsGallery (0.1.0)
+
+DEPENDENCIES:
+  - MomentsGallery (from `../`)
+
+EXTERNAL SOURCES:
+  MomentsGallery:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MomentsGallery: 02b3f58950dc67d36e424fbb631a8a643b61263b
+
+COCOAPODS: 0.39.0

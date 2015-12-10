@@ -1,0 +1,800 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2A9F1B42F1EBB1E7E18CB956E28B8B7A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		337B8DB6A5257385093402EA70D70023 /* MomentScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2176B9AA769927238EF66D80A1F4F63C /* MomentScrollView.swift */; };
+		4E4529689D16E6C4061C84A3EA3E4CBB /* Pods-MomentsGallery_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EA34119F409D681AC1EE9E0115ED4B4 /* Pods-MomentsGallery_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		573CE276AA54F20866AB4EB1C438653D /* Pods-MomentsGallery_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A478D3EE3CBA5B4C4884369CAB2309 /* Pods-MomentsGallery_Tests-dummy.m */; };
+		6A5EE89E41BE062B850DF4E6E8DDE770 /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76239E75F7ECE5963F872DC2DB52B083 /* Moment.swift */; };
+		732E7E50EE84A2F4D2A9FB4D58DB6C78 /* MomentsGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = E434441F4ADFA048E89C07F0715AADA1 /* MomentsGallery.swift */; };
+		7606B931A11D8C85F72DEADFFE273E09 /* MomentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9164F6FCCFE71AC570D0A39656E1B01 /* MomentView.swift */; };
+		863DB058D487DF4E4B2754FA0D7313D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		8730611BDAB0FCD3722E05C45A785DDE /* Pods-MomentsGallery_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5494194B6F7CC89C2922BBC6E37D44C /* Pods-MomentsGallery_Example-dummy.m */; };
+		881C70B61EEB60D23318826083247902 /* MomentsGallery.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F7D46E2D07D9B35C163372E0CE15ED12 /* MomentsGallery.bundle */; };
+		9A80486136797B17D2A3E330EDD5483B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
+		D385A9E35ABC49FAC3F011C9B422C9F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		E9583EAB3D8C3C93B83590727C532274 /* Pods-MomentsGallery_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EEE70FB1C6D5831AFCE2F9673479B4F8 /* Pods-MomentsGallery_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAE5B91660D3866111042D24AF2366CC /* MomentImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A19FBA992CA603D4851F20417E85633 /* MomentImageView.swift */; };
+		EBCA7DEA51449463ED3B8AF8FCF027AA /* MomentsGallery-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C2C80C989C9588FB8A28AA424BED852 /* MomentsGallery-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F967FF79B1FF9E92E19135067ECDB64A /* MomentsGallery-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33DDBD94763FFEC46A2FC75CE3F96823 /* MomentsGallery-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D269A5A1264BD871283C12378458050 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEDBB76BEDB4A2469F1DC4F4F027B3AF;
+			remoteInfo = "MomentsGallery-MomentsGallery";
+		};
+		DAF1A7EE37FA25612A646A7BE2AFCB7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8F5080C594FD1D18A1EE480F899F57B;
+			remoteInfo = MomentsGallery;
+		};
+		EF079EB4AF4C79C84188BC78497DBF42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8F5080C594FD1D18A1EE480F899F57B;
+			remoteInfo = MomentsGallery;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0BD3A0CA56A83134F12FA89F04C11E84 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FB38985F3043878C3FB63E433E0CEA2 /* Pods-MomentsGallery_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MomentsGallery_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		12EDF57CC19966358C093DE3E6285DDF /* Pods-MomentsGallery_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MomentsGallery_Tests-resources.sh"; sourceTree = "<group>"; };
+		1547E1FE651AA5D182E76EC8F3086CA8 /* Pods-MomentsGallery_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MomentsGallery_Tests.modulemap"; sourceTree = "<group>"; };
+		165A5EB6D8951AE6E22FB47765B60E8C /* Pods-MomentsGallery_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MomentsGallery_Example.modulemap"; sourceTree = "<group>"; };
+		18F951D763D665661555484EF188BFCA /* Pods-MomentsGallery_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MomentsGallery_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		205E8D31A1454D4B45E09CBCACE951BE /* MomentsGallery.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MomentsGallery.xcconfig; sourceTree = "<group>"; };
+		2176B9AA769927238EF66D80A1F4F63C /* MomentScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MomentScrollView.swift; sourceTree = "<group>"; };
+		2A19FBA992CA603D4851F20417E85633 /* MomentImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MomentImageView.swift; sourceTree = "<group>"; };
+		33DDBD94763FFEC46A2FC75CE3F96823 /* MomentsGallery-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MomentsGallery-dummy.m"; sourceTree = "<group>"; };
+		34A478D3EE3CBA5B4C4884369CAB2309 /* Pods-MomentsGallery_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MomentsGallery_Tests-dummy.m"; sourceTree = "<group>"; };
+		3B466F9174A28A293F9A892FF0A2A8C2 /* Pods-MomentsGallery_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MomentsGallery_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		3B991C4DE93A8DD35845387B53CD996F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C2C80C989C9588FB8A28AA424BED852 /* MomentsGallery-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MomentsGallery-umbrella.h"; sourceTree = "<group>"; };
+		50B420DF7F9495EAF5FB9D41F5BCE16B /* MomentsGallery-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MomentsGallery-prefix.pch"; sourceTree = "<group>"; };
+		59DA0A52ED84397C62D3814CBA4961D2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C507EA11C1649AE877754261CF55BDF /* Pods-MomentsGallery_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MomentsGallery_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		76239E75F7ECE5963F872DC2DB52B083 /* Moment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Moment.swift; sourceTree = "<group>"; };
+		8289CB2363D072F0F570AD7FAB4C78F4 /* Pods-MomentsGallery_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MomentsGallery_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8EA34119F409D681AC1EE9E0115ED4B4 /* Pods-MomentsGallery_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MomentsGallery_Example-umbrella.h"; sourceTree = "<group>"; };
+		92387A062774E522432E6C461E3CE7EE /* Pods-MomentsGallery_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MomentsGallery_Example-resources.sh"; sourceTree = "<group>"; };
+		9BDC727B0E9838286F56B821E82E605C /* MomentsGallery.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MomentsGallery.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C3188A126EAFAD36FDE224737F60B4 /* Pods-MomentsGallery_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MomentsGallery_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B00A19AF2BC1F7C2A4F52B99CC65F814 /* Pods_MomentsGallery_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MomentsGallery_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B42EB6DA7919CE7BF0E43DF6BD4B1ACC /* Pods-MomentsGallery_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MomentsGallery_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B9164F6FCCFE71AC570D0A39656E1B01 /* MomentView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MomentView.swift; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		D16A650ACB1746B3C614D54BDBA0B67A /* Pods-MomentsGallery_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MomentsGallery_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		D20518370DA6E7F800FBDCDF3BEF66C6 /* MomentsGallery.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MomentsGallery.modulemap; sourceTree = "<group>"; };
+		D5D9348C448725429C1BC2352B263D9B /* Pods-MomentsGallery_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MomentsGallery_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E434441F4ADFA048E89C07F0715AADA1 /* MomentsGallery.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MomentsGallery.swift; sourceTree = "<group>"; };
+		EEE70FB1C6D5831AFCE2F9673479B4F8 /* Pods-MomentsGallery_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MomentsGallery_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F5494194B6F7CC89C2922BBC6E37D44C /* Pods-MomentsGallery_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MomentsGallery_Example-dummy.m"; sourceTree = "<group>"; };
+		F5E7D0E1C9016E93F515E00B961280B9 /* Pods-MomentsGallery_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MomentsGallery_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		F7D46E2D07D9B35C163372E0CE15ED12 /* MomentsGallery.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MomentsGallery.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF0CA6AD41AB4F57777DA204A42A0CD0 /* Pods_MomentsGallery_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MomentsGallery_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B9DA735FDA2E68C691D1D4838A6988D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				863DB058D487DF4E4B2754FA0D7313D1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3FD8A9D4C9101E628089F39BDC244B02 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A9F1B42F1EBB1E7E18CB956E28B8B7A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4637EB3225E86F1A989CEFBEB0379F99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D385A9E35ABC49FAC3F011C9B422C9F7 /* Foundation.framework in Frameworks */,
+				9A80486136797B17D2A3E330EDD5483B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97CC76ADF66941897B7475ED7A3138F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03EFB0F867EC4ADD9CB412ECAD39991D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				157F327C71F4C629BEBDF776EDF69323 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		149E3ED9ACA1EC24CC4C89C5B3F3A30F /* Pods-MomentsGallery_Example */ = {
+			isa = PBXGroup;
+			children = (
+				59DA0A52ED84397C62D3814CBA4961D2 /* Info.plist */,
+				165A5EB6D8951AE6E22FB47765B60E8C /* Pods-MomentsGallery_Example.modulemap */,
+				6C507EA11C1649AE877754261CF55BDF /* Pods-MomentsGallery_Example-acknowledgements.markdown */,
+				18F951D763D665661555484EF188BFCA /* Pods-MomentsGallery_Example-acknowledgements.plist */,
+				F5494194B6F7CC89C2922BBC6E37D44C /* Pods-MomentsGallery_Example-dummy.m */,
+				8289CB2363D072F0F570AD7FAB4C78F4 /* Pods-MomentsGallery_Example-frameworks.sh */,
+				92387A062774E522432E6C461E3CE7EE /* Pods-MomentsGallery_Example-resources.sh */,
+				8EA34119F409D681AC1EE9E0115ED4B4 /* Pods-MomentsGallery_Example-umbrella.h */,
+				D16A650ACB1746B3C614D54BDBA0B67A /* Pods-MomentsGallery_Example.debug.xcconfig */,
+				D5D9348C448725429C1BC2352B263D9B /* Pods-MomentsGallery_Example.release.xcconfig */,
+			);
+			name = "Pods-MomentsGallery_Example";
+			path = "Target Support Files/Pods-MomentsGallery_Example";
+			sourceTree = "<group>";
+		};
+		157F327C71F4C629BEBDF776EDF69323 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				76239E75F7ECE5963F872DC2DB52B083 /* Moment.swift */,
+				2A19FBA992CA603D4851F20417E85633 /* MomentImageView.swift */,
+				2176B9AA769927238EF66D80A1F4F63C /* MomentScrollView.swift */,
+				E434441F4ADFA048E89C07F0715AADA1 /* MomentsGallery.swift */,
+				B9164F6FCCFE71AC570D0A39656E1B01 /* MomentView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		18340F12838DEE43507667CC74401EB1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */,
+				C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		363582E7189597C37EDBB6F4DCE2FE94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F7D46E2D07D9B35C163372E0CE15ED12 /* MomentsGallery.bundle */,
+				9BDC727B0E9838286F56B821E82E605C /* MomentsGallery.framework */,
+				B00A19AF2BC1F7C2A4F52B99CC65F814 /* Pods_MomentsGallery_Example.framework */,
+				FF0CA6AD41AB4F57777DA204A42A0CD0 /* Pods_MomentsGallery_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18340F12838DEE43507667CC74401EB1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				FD7677F2D6D10623DDA31B7F765A9918 /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				363582E7189597C37EDBB6F4DCE2FE94 /* Products */,
+				9241BAE8F3C8E35CECDB98F72B4BC9FA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8BE893B143E4501DE862B18CFBBEE0C3 /* Pods-MomentsGallery_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0BD3A0CA56A83134F12FA89F04C11E84 /* Info.plist */,
+				1547E1FE651AA5D182E76EC8F3086CA8 /* Pods-MomentsGallery_Tests.modulemap */,
+				0FB38985F3043878C3FB63E433E0CEA2 /* Pods-MomentsGallery_Tests-acknowledgements.markdown */,
+				A9C3188A126EAFAD36FDE224737F60B4 /* Pods-MomentsGallery_Tests-acknowledgements.plist */,
+				34A478D3EE3CBA5B4C4884369CAB2309 /* Pods-MomentsGallery_Tests-dummy.m */,
+				F5E7D0E1C9016E93F515E00B961280B9 /* Pods-MomentsGallery_Tests-frameworks.sh */,
+				12EDF57CC19966358C093DE3E6285DDF /* Pods-MomentsGallery_Tests-resources.sh */,
+				EEE70FB1C6D5831AFCE2F9673479B4F8 /* Pods-MomentsGallery_Tests-umbrella.h */,
+				3B466F9174A28A293F9A892FF0A2A8C2 /* Pods-MomentsGallery_Tests.debug.xcconfig */,
+				B42EB6DA7919CE7BF0E43DF6BD4B1ACC /* Pods-MomentsGallery_Tests.release.xcconfig */,
+			);
+			name = "Pods-MomentsGallery_Tests";
+			path = "Target Support Files/Pods-MomentsGallery_Tests";
+			sourceTree = "<group>";
+		};
+		9241BAE8F3C8E35CECDB98F72B4BC9FA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				149E3ED9ACA1EC24CC4C89C5B3F3A30F /* Pods-MomentsGallery_Example */,
+				8BE893B143E4501DE862B18CFBBEE0C3 /* Pods-MomentsGallery_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		D13889BCE5D237FCE5F31A6F93778CAD /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B991C4DE93A8DD35845387B53CD996F /* Info.plist */,
+				D20518370DA6E7F800FBDCDF3BEF66C6 /* MomentsGallery.modulemap */,
+				205E8D31A1454D4B45E09CBCACE951BE /* MomentsGallery.xcconfig */,
+				33DDBD94763FFEC46A2FC75CE3F96823 /* MomentsGallery-dummy.m */,
+				50B420DF7F9495EAF5FB9D41F5BCE16B /* MomentsGallery-prefix.pch */,
+				4C2C80C989C9588FB8A28AA424BED852 /* MomentsGallery-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MomentsGallery";
+			sourceTree = "<group>";
+		};
+		F495A33FAD76A080F6C1EED53D692629 /* MomentsGallery */ = {
+			isa = PBXGroup;
+			children = (
+				03EFB0F867EC4ADD9CB412ECAD39991D /* Pod */,
+				D13889BCE5D237FCE5F31A6F93778CAD /* Support Files */,
+			);
+			name = MomentsGallery;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		FD7677F2D6D10623DDA31B7F765A9918 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F495A33FAD76A080F6C1EED53D692629 /* MomentsGallery */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		70BCBC0E59BE48782538869FFD65D045 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9583EAB3D8C3C93B83590727C532274 /* Pods-MomentsGallery_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		93BF3EB4EB1FC216B746BC98B01B1D6E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBCA7DEA51449463ED3B8AF8FCF027AA /* MomentsGallery-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3791B57A56E3BEF4FB08D7A99926CA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E4529689D16E6C4061C84A3EA3E4CBB /* Pods-MomentsGallery_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4E16AA2F045EFDEE945C012B873880B1 /* Pods-MomentsGallery_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7C1759476E66C933E59797D183A5046A /* Build configuration list for PBXNativeTarget "Pods-MomentsGallery_Example" */;
+			buildPhases = (
+				F6A1354C16C966B96F6D60B8E09DD0A2 /* Sources */,
+				2B9DA735FDA2E68C691D1D4838A6988D /* Frameworks */,
+				CD3791B57A56E3BEF4FB08D7A99926CA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				665892A4DC578D0733424260D03677B1 /* PBXTargetDependency */,
+			);
+			name = "Pods-MomentsGallery_Example";
+			productName = "Pods-MomentsGallery_Example";
+			productReference = B00A19AF2BC1F7C2A4F52B99CC65F814 /* Pods_MomentsGallery_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		596829EAC65C611134DC81A644CBF9C9 /* Pods-MomentsGallery_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49731C55CD33224637F20A11EC4DEBD1 /* Build configuration list for PBXNativeTarget "Pods-MomentsGallery_Tests" */;
+			buildPhases = (
+				9D50D6E15E0DF9CE66308A1B77A402AD /* Sources */,
+				3FD8A9D4C9101E628089F39BDC244B02 /* Frameworks */,
+				70BCBC0E59BE48782538869FFD65D045 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3277991402845E63836E2998DB8293D9 /* PBXTargetDependency */,
+			);
+			name = "Pods-MomentsGallery_Tests";
+			productName = "Pods-MomentsGallery_Tests";
+			productReference = FF0CA6AD41AB4F57777DA204A42A0CD0 /* Pods_MomentsGallery_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CEDBB76BEDB4A2469F1DC4F4F027B3AF /* MomentsGallery-MomentsGallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDF03E7A25DDCD4C5C47952C22058075 /* Build configuration list for PBXNativeTarget "MomentsGallery-MomentsGallery" */;
+			buildPhases = (
+				1C3126972C880D0EAF5608DB1279E59E /* Sources */,
+				97CC76ADF66941897B7475ED7A3138F3 /* Frameworks */,
+				4B69BDAFBAB98EB6C1F06E1E138CE96C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MomentsGallery-MomentsGallery";
+			productName = "MomentsGallery-MomentsGallery";
+			productReference = F7D46E2D07D9B35C163372E0CE15ED12 /* MomentsGallery.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		D8F5080C594FD1D18A1EE480F899F57B /* MomentsGallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 276FC88D49CC19B12D6810A17727007E /* Build configuration list for PBXNativeTarget "MomentsGallery" */;
+			buildPhases = (
+				DD47FE34027A2DF889B653DCC5849349 /* Sources */,
+				4637EB3225E86F1A989CEFBEB0379F99 /* Frameworks */,
+				7742DF0F12CB1999AAEBE5E88F919163 /* Resources */,
+				93BF3EB4EB1FC216B746BC98B01B1D6E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82BC621B3A93FAB11B555F9979E9E4C6 /* PBXTargetDependency */,
+			);
+			name = MomentsGallery;
+			productName = MomentsGallery;
+			productReference = 9BDC727B0E9838286F56B821E82E605C /* MomentsGallery.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 363582E7189597C37EDBB6F4DCE2FE94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8F5080C594FD1D18A1EE480F899F57B /* MomentsGallery */,
+				CEDBB76BEDB4A2469F1DC4F4F027B3AF /* MomentsGallery-MomentsGallery */,
+				4E16AA2F045EFDEE945C012B873880B1 /* Pods-MomentsGallery_Example */,
+				596829EAC65C611134DC81A644CBF9C9 /* Pods-MomentsGallery_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4B69BDAFBAB98EB6C1F06E1E138CE96C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7742DF0F12CB1999AAEBE5E88F919163 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				881C70B61EEB60D23318826083247902 /* MomentsGallery.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C3126972C880D0EAF5608DB1279E59E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D50D6E15E0DF9CE66308A1B77A402AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				573CE276AA54F20866AB4EB1C438653D /* Pods-MomentsGallery_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD47FE34027A2DF889B653DCC5849349 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A5EE89E41BE062B850DF4E6E8DDE770 /* Moment.swift in Sources */,
+				EAE5B91660D3866111042D24AF2366CC /* MomentImageView.swift in Sources */,
+				337B8DB6A5257385093402EA70D70023 /* MomentScrollView.swift in Sources */,
+				F967FF79B1FF9E92E19135067ECDB64A /* MomentsGallery-dummy.m in Sources */,
+				732E7E50EE84A2F4D2A9FB4D58DB6C78 /* MomentsGallery.swift in Sources */,
+				7606B931A11D8C85F72DEADFFE273E09 /* MomentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6A1354C16C966B96F6D60B8E09DD0A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8730611BDAB0FCD3722E05C45A785DDE /* Pods-MomentsGallery_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3277991402845E63836E2998DB8293D9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MomentsGallery;
+			target = D8F5080C594FD1D18A1EE480F899F57B /* MomentsGallery */;
+			targetProxy = EF079EB4AF4C79C84188BC78497DBF42 /* PBXContainerItemProxy */;
+		};
+		665892A4DC578D0733424260D03677B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MomentsGallery;
+			target = D8F5080C594FD1D18A1EE480F899F57B /* MomentsGallery */;
+			targetProxy = DAF1A7EE37FA25612A646A7BE2AFCB7D /* PBXContainerItemProxy */;
+		};
+		82BC621B3A93FAB11B555F9979E9E4C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "MomentsGallery-MomentsGallery";
+			target = CEDBB76BEDB4A2469F1DC4F4F027B3AF /* MomentsGallery-MomentsGallery */;
+			targetProxy = 2D269A5A1264BD871283C12378458050 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0CBD0C44F622874364C20C6F03928638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 205E8D31A1454D4B45E09CBCACE951BE /* MomentsGallery.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = MomentsGallery;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C8B4EB2D7B5CA7A6EC2224EFEDD7963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 205E8D31A1454D4B45E09CBCACE951BE /* MomentsGallery.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MomentsGallery/MomentsGallery-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MomentsGallery/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MomentsGallery/MomentsGallery.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MomentsGallery;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		552D02D5BA751AC2E8790D2811D496CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7D2C6426DEC403C368D06A45D73BDAB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 205E8D31A1454D4B45E09CBCACE951BE /* MomentsGallery.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MomentsGallery/MomentsGallery-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MomentsGallery/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MomentsGallery/MomentsGallery.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MomentsGallery;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8D36D59B5A5DC94FC1A2C2B942C09AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D16A650ACB1746B3C614D54BDBA0B67A /* Pods-MomentsGallery_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MomentsGallery_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MomentsGallery_Example/Pods-MomentsGallery_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MomentsGallery_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B88AC1130D9AA7741EA5335F781399DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B466F9174A28A293F9A892FF0A2A8C2 /* Pods-MomentsGallery_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MomentsGallery_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MomentsGallery_Tests/Pods-MomentsGallery_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MomentsGallery_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC261662550627AA51712AD8973169B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 205E8D31A1454D4B45E09CBCACE951BE /* MomentsGallery.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = MomentsGallery;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		BC3714AF5DF92427D4AEB61BE4C7E97A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5D9348C448725429C1BC2352B263D9B /* Pods-MomentsGallery_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MomentsGallery_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MomentsGallery_Example/Pods-MomentsGallery_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MomentsGallery_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E3A121CEBE2FCD86F7285B20CC3D0E3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B42EB6DA7919CE7BF0E43DF6BD4B1ACC /* Pods-MomentsGallery_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-MomentsGallery_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MomentsGallery_Tests/Pods-MomentsGallery_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_MomentsGallery_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		276FC88D49CC19B12D6810A17727007E /* Build configuration list for PBXNativeTarget "MomentsGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D2C6426DEC403C368D06A45D73BDAB0 /* Debug */,
+				1C8B4EB2D7B5CA7A6EC2224EFEDD7963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				552D02D5BA751AC2E8790D2811D496CA /* Debug */,
+				10DE1947DAC0ED28F6C0A9F9BD75D546 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49731C55CD33224637F20A11EC4DEBD1 /* Build configuration list for PBXNativeTarget "Pods-MomentsGallery_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B88AC1130D9AA7741EA5335F781399DB /* Debug */,
+				E3A121CEBE2FCD86F7285B20CC3D0E3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7C1759476E66C933E59797D183A5046A /* Build configuration list for PBXNativeTarget "Pods-MomentsGallery_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D36D59B5A5DC94FC1A2C2B942C09AF7 /* Debug */,
+				BC3714AF5DF92427D4AEB61BE4C7E97A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDF03E7A25DDCD4C5C47952C22058075 /* Build configuration list for PBXNativeTarget "MomentsGallery-MomentsGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC261662550627AA51712AD8973169B0 /* Debug */,
+				0CBD0C44F622874364C20C6F03928638 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

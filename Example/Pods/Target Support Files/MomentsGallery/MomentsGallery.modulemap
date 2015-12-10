@@ -1,0 +1,6 @@
+framework module MomentsGallery {
+  umbrella header "MomentsGallery-umbrella.h"
+
+  export *
+  module * { export * }
+}
