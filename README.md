@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/MomentsGallery.svg?style=flat)](http://cocoapods.org/pods/MomentsGallery)
 [![Platform](https://img.shields.io/cocoapods/p/MomentsGallery.svg?style=flat)](http://cocoapods.org/pods/MomentsGallery)
 
+MomentsGallery is a gallery view controller inspired by Twitter's Moments. It includes a parallax effect while swiping between photos, tap to view the full photo and the ability to add a title and a caption.
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
