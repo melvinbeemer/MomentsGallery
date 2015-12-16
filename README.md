@@ -11,6 +11,32 @@ MomentsGallery is a gallery view controller inspired by Twitter's Moments. It in
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+### Local images
+```swift
+var images = ["1.jpg", "2.jpg", "3.jpg"]
+var moments: [Moment] = []
+
+for imagePath in images {
+let moment = Moment(image: UIImage(named: imagePath))
+moments.append(moment)
+}
+
+let momentsVC = MomentsGallery(moments: moments)
+self.presentViewController(momentsVC, animated: true, completion: nil)
+```
+### Images from the web
+```swift
+var images = ["http://url.com/1.jpg", "http://url.com/2.jpg", "http://url.com/3.jpg"]
+var moments: [Moment] = []
+
+for imageUrl in images {
+let moment = Moment(url: imageUrl)
+moments.append(moment)
+}
+
+let momentsVC = MomentsGallery(moments: moments)
+self.presentViewController(momentsVC, animated: true, completion: nil)
+```
 ## Requirements
 
 ## Installation
@@ -20,6 +46,12 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod "MomentsGallery"
+```
+
+To install MomentsView with Carthage add the following line to your `cartfile`
+
+```
+github "Fortyfox/MomentsGallery" ~> 0.1.0
 ```
 
 ## Author
