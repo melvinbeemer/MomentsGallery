@@ -10,6 +10,8 @@ import UIKit
 import MomentsGallery
 
 class ViewController: UIViewController {
+    
+    let images = ["https://static.pexels.com/photos/17587/pexels-photo.jpg", "https://static.pexels.com/photos/21393/pexels-photo.jpg", "https://static.pexels.com/photos/19872/pexels-photo.jpg"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,9 +32,8 @@ class ViewController: UIViewController {
     func toGalleryButtonTapped() {
         var moments: [Moment] = []
         
-        for var i = 1; i < 4; i++ {
-            //let moment = Moment(image: UIImage(named: "\(i).jpg"))
-            let moment = Moment(url: "https://static.pexels.com/photos/17587/pexels-photo.jpg")
+        for imageUrl in images {
+            let moment = Moment(url: imageUrl)
             moments.append(moment)
         }
         

@@ -18,11 +18,9 @@
   },
   "requires_arc": true,
   "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "MomentsGallery": [
-      "Pod/Assets/*.png"
-    ]
-  },
+  "resources": [
+    "Pod/Assets/*.png"
+  ],
   "frameworks": "UIKit",
   "dependencies": {
     "HanekeSwift": [
