@@ -7,6 +7,8 @@
 
 MomentsGallery is a gallery view controller inspired by Twitter's Moments. It includes a parallax effect while swiping between photos, tap to view the full photo and the ability to add a title and a caption.
 
+![MomentsGallery Exmaple](https://i.imgur.com/F5DzQIw.gif)
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
