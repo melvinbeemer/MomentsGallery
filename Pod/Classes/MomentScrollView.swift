@@ -52,11 +52,10 @@ class MomentScrollView: UIScrollView, UIScrollViewDelegate {
         self.scrollEnabled = false
         
         if moment.url != nil {
-            imageView = MomentImageView(url: moment.url, frame: CGRectMake(0, 0, self.frame.size.width, self.frame.size.height))
+            imageView = MomentImageView(url: moment.url, frame: CGRectMake(0, 0, self.frame.size.width+1, self.frame.size.height))
         } else {
-            imageView = MomentImageView(image: moment.image, frame: CGRectMake(0, 0, self.frame.size.width, self.frame.size.height))
+            imageView = MomentImageView(image: moment.image, frame: CGRectMake(0, 0, self.frame.size.width+1, self.frame.size.height))
         }
-        
         
         self.addSubview(imageView)
         
