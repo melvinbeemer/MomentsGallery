@@ -59,7 +59,7 @@ class MomentImageView: UIView {
     }
     
     private func updateView() {
-        if self.bounds.size.width == 0 || self.bounds.size.height == 0 || self.image.size.width == 0 || self.image.size.height == 0 {
+        if self.bounds.size.width == 0 || self.bounds.size.height == 0 {
             return
         }
         
