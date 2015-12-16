@@ -117,6 +117,7 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
         let bundle = NSBundle(forClass: MomentsGallery.classForCoder())
         closeButton = UIButton(frame: CGRectMake(screenWidth - 50, 0, 50, 50))
         closeButton.setImage(UIImage(contentsOfFile: bundle.pathForResource("MVClose", ofType: "png")!), forState: .Normal)
+        closeButton.addTarget(self, action: "closeButtonTouched:", forControlEvents: .TouchUpInside)
         self.view.addSubview(closeButton)
     }
     
@@ -134,6 +135,11 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
         currentPageIndex = page
         
         delegate?.didShowMomentAtIndex?(page)
+    }
+    
+    // Close button actions
+    func closeButtonTouched(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
 }
