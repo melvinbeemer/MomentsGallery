@@ -84,8 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-MomentsGallery_Tests/Haneke.framework"
   install_framework "Pods-MomentsGallery_Tests/MomentsGallery.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-MomentsGallery_Tests/Haneke.framework"
   install_framework "Pods-MomentsGallery_Tests/MomentsGallery.framework"
 fi

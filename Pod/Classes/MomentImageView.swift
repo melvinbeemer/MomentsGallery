@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import Haneke
 
 class MomentImageView: UIView {
     
     var image: UIImage!
+    var url: String!
     
     private var imageView: UIImageView!
     
@@ -27,6 +29,15 @@ class MomentImageView: UIView {
         self.imageView.image = image
     }
     
+    convenience init(url: String, frame: CGRect) {
+        self.init(frame: frame)
+        
+        commonInit()
+        
+        self.url = url
+        self.imageView.hnk_setImageFromURL(NSURL(string: url)!)
+    }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -38,7 +49,7 @@ class MomentImageView: UIView {
         if imageView == nil {
             imageView = UIImageView(frame: self.frame)
             imageView.contentMode = UIViewContentMode.ScaleAspectFill
-            imageView.backgroundColor = UIColor.redColor()
+            imageView.backgroundColor = UIColor.darkGrayColor()
             self.addSubview(imageView)
         }
     }

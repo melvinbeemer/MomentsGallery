@@ -1,5 +1,7 @@
 PODS:
-  - MomentsGallery (0.1.0)
+  - HanekeSwift (0.10.0)
+  - MomentsGallery (0.1.0):
+    - HanekeSwift
 
 DEPENDENCIES:
   - MomentsGallery (from `../`)
@@ -9,6 +11,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  MomentsGallery: 02b3f58950dc67d36e424fbb631a8a643b61263b
+  HanekeSwift: d6f5bdf9dbdbbc09d59623b2c1d533e46463dd4d
+  MomentsGallery: 775d65e9446e22e22815767e3086a82933464552
 
 COCOAPODS: 0.39.0

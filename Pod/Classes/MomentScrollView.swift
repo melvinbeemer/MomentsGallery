@@ -51,7 +51,13 @@ class MomentScrollView: UIScrollView, UIScrollViewDelegate {
         self.bounces = false
         self.scrollEnabled = false
         
-        imageView = MomentImageView(image: moment.image, frame: CGRectMake(0, 0, self.frame.size.width, self.frame.size.height))
+        if moment.url != nil {
+            imageView = MomentImageView(url: moment.url, frame: CGRectMake(0, 0, self.frame.size.width, self.frame.size.height))
+        } else {
+            imageView = MomentImageView(image: moment.image, frame: CGRectMake(0, 0, self.frame.size.width, self.frame.size.height))
+        }
+        
+        
         self.addSubview(imageView)
         
         let tapRecognizer = UITapGestureRecognizer(target: self, action: "scrollViewTapped")

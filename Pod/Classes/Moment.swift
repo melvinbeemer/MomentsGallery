@@ -27,14 +27,22 @@ public class Moment: NSObject {
     public var image: UIImage!
     public var title: String!
     public var text: String!
+    public var url: String!
     
     override init() {
         super.init()
     }
     
-    public convenience init(image: UIImage, title: String, text: String) {
+    public convenience init(image: UIImage, title: String = "", text: String = "") {
         self.init()
         self.image = image
+        self.title = title
+        self.text = text
+    }
+    
+    public convenience init(url: String, title: String = "", text: String = "") {
+        self.init()
+        self.url = url
         self.title = title
         self.text = text
     }

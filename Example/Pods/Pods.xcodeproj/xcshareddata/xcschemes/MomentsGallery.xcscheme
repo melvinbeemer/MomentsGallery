@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '64DFAB5F63E263CBBC66B437'
+               BlueprintIdentifier = '74E988C33B151A74AA38B590'
                BlueprintName = 'MomentsGallery'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'MomentsGallery.framework'>

@@ -31,7 +31,8 @@ class ViewController: UIViewController {
         var moments: [Moment] = []
         
         for var i = 1; i < 4; i++ {
-            let moment = Moment(image: UIImage(named: "\(i).jpg")!, title: "", text: "")
+            //let moment = Moment(image: UIImage(named: "\(i).jpg"))
+            let moment = Moment(url: "https://static.pexels.com/photos/17587/pexels-photo.jpg")
             moments.append(moment)
         }
         

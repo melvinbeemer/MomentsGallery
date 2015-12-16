@@ -23,5 +23,10 @@
       "Pod/Assets/*.png"
     ]
   },
-  "frameworks": "UIKit"
+  "frameworks": "UIKit",
+  "dependencies": {
+    "HanekeSwift": [
+
+    ]
+  }
 }
