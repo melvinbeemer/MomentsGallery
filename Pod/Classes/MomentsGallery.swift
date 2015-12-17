@@ -113,10 +113,13 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
         
         self.view.addSubview(progressIndicatorView)
         
-        // Setup close button
+        // Setup close button)
         let bundle = NSBundle(forClass: MomentsGallery.classForCoder())
+        guard let imagePath = bundle.pathForResource("MVClose", ofType: "png") else { return }
+        guard let closeImage = UIImage(contentsOfFile: imagePath) else { return }
+        
         closeButton = UIButton(frame: CGRectMake(screenWidth - 50, 0, 50, 50))
-        closeButton.setImage(UIImage(contentsOfFile: bundle.pathForResource("MVClose", ofType: "png")!), forState: .Normal)
+        closeButton.setImage(closeImage, forState: .Normal)
         closeButton.addTarget(self, action: "closeButtonTouched:", forControlEvents: .TouchUpInside)
         self.view.addSubview(closeButton)
     }
