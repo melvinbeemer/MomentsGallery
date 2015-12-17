@@ -41,7 +41,7 @@ self.presentViewController(momentsVC, animated: true, completion: nil)
 ```
 ## Requirements
 * Swift 2.1
-* iOS 8.0
+* iOS 8.2
 
 ## Dependencies
 * [HanekeSwift](https://github.com/Haneke/HanekeSwift)

@@ -27,7 +27,7 @@ MomentsGallery is a gallery view controller inspired by Twitter's Moments. It in
   s.source           = { :git => "https://github.com/Fortyfox/MomentsGallery.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/melvinbeemer'
 
-  s.platform     = :ios, '8.0'
+  s.platform     = :ios, '8.2'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
