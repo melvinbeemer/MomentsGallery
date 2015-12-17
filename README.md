@@ -19,8 +19,8 @@ var images = ["1.jpg", "2.jpg", "3.jpg"]
 var moments: [Moment] = []
 
 for imagePath in images {
-let moment = Moment(image: UIImage(named: imagePath))
-moments.append(moment)
+    let moment = Moment(image: UIImage(named: imagePath))
+    moments.append(moment)
 }
 
 let momentsVC = MomentsGallery(moments: moments)
@@ -32,8 +32,8 @@ var images = ["http://url.com/1.jpg", "http://url.com/2.jpg", "http://url.com/3.
 var moments: [Moment] = []
 
 for imageUrl in images {
-let moment = Moment(url: imageUrl)
-moments.append(moment)
+    let moment = Moment(url: imageUrl)
+    moments.append(moment)
 }
 
 let momentsVC = MomentsGallery(moments: moments)
