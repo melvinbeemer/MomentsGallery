@@ -40,6 +40,11 @@ let momentsVC = MomentsGallery(moments: moments)
 self.presentViewController(momentsVC, animated: true, completion: nil)
 ```
 ## Requirements
+* Swift 2.1
+* iOS 8.0
+
+## Dependencies
+* [HanekeSwift](https://github.com/Haneke/HanekeSwift)
 
 ## Installation
 
