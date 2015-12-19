@@ -18,9 +18,6 @@ MomentsGallery is a gallery view controller inspired by Twitter's Moments. It in
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'MomentsGallery' => ['Pod/Assets/*.png']
-  }
 
   s.frameworks = 'UIKit'
   s.dependency 'HanekeSwift'
