@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "MomentsGallery"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "A gallery view controller inspired by Twitter's Moments."
 
   s.description      = <<-DESC

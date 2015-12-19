@@ -1,6 +1,6 @@
 PODS:
   - HanekeSwift (0.10.0)
-  - MomentsGallery (0.1.0):
+  - MomentsGallery (0.1.1):
     - HanekeSwift
 
 DEPENDENCIES:
@@ -12,6 +12,6 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   HanekeSwift: d6f5bdf9dbdbbc09d59623b2c1d533e46463dd4d
-  MomentsGallery: 775d65e9446e22e22815767e3086a82933464552
+  MomentsGallery: 624a612ce96260c87ed6b5236bf0d80a28ec0d9e
 
 COCOAPODS: 0.39.0
