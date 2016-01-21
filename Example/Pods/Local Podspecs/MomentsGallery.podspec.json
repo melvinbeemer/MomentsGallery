@@ -22,7 +22,7 @@
   "frameworks": "UIKit",
   "dependencies": {
     "HanekeSwift": [
-
+      "~> 0.10.0"
     ]
   }
 }
