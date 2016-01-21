@@ -51,6 +51,7 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
     var innerScrollViews: [UIScrollView] = []
     
     // User settings
+    public var initialPageIndex: Int = 0
     public var scrollViewGutter: CGFloat = 2.5
     public var scrollViewBackgroundColor: UIColor = UIColor(red: 17/255, green: 17/255, blue: 17/255, alpha: 1)
     public var parallaxFactor: CGFloat = 0.25
@@ -120,6 +121,9 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
         closeButton.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
         closeButton.addTarget(self, action: "closeButtonTouched:", forControlEvents: .TouchUpInside)
         self.view.addSubview(closeButton)
+        
+        // Stage
+        pagingScrollView.setContentOffset(CGPointMake(pagingScrollView.frame.size.width * CGFloat(initialPageIndex), 0), animated: false)
     }
     
     // MARK: - UIScrollView Delegate
