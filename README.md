@@ -39,6 +39,16 @@ for imageUrl in images {
 let momentsVC = MomentsGallery(moments: moments)
 self.presentViewController(momentsVC, animated: true, completion: nil)
 ```
+
+### Controlling the page index
+```swift
+let momentsVC = MomentsGallery(moments: [moment, moment, moment])
+momentsVC.initialPageIndex = 2 // Set initial index before presenting, not animated
+self.presentViewController(momentsVC, animated: true, completion: nil)
+
+momentsVC.scrollToIndex(2) // Set index after view controller is presented, animated
+```
+
 ## Requirements
 * Swift 2.1
 * iOS 8.2
