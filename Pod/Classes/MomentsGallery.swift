@@ -148,3 +148,12 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
     }
     
 }
+
+// MARK: - Public user functions
+extension MomentsGallery {
+    
+    public func scrollToIndex(index: Int) {
+        pagingScrollView.setContentOffset(CGPointMake(pagingScrollView.frame.size.width * CGFloat(index), 0), animated: true)
+    }
+    
+}
