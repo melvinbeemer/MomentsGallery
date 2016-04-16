@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         let button = UIButton(frame: CGRectMake(0, self.view.frame.size.height / 2 - 25, self.view.frame.size.width, 50))
         button.setTitle("To Gallery", forState: .Normal)
         button.setTitleColor(UIColor.blackColor(), forState: .Normal)
-        button.addTarget(self, action: "toGalleryButtonTapped", forControlEvents: .TouchUpInside)
+        button.addTarget(self, action: #selector(toGalleryButtonTapped), forControlEvents: .TouchUpInside)
         self.view.addSubview(button)
     }
 

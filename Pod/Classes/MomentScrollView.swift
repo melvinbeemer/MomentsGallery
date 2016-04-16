@@ -59,7 +59,7 @@ class MomentScrollView: UIScrollView, UIScrollViewDelegate {
         
         self.addSubview(imageView)
         
-        let tapRecognizer = UITapGestureRecognizer(target: self, action: "scrollViewTapped")
+        let tapRecognizer = UITapGestureRecognizer(target: self, action: #selector(scrollViewTapped))
         tapRecognizer.numberOfTapsRequired = 1
         tapRecognizer.numberOfTouchesRequired = 1
         self.addGestureRecognizer(tapRecognizer)

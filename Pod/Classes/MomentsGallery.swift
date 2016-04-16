@@ -103,7 +103,7 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
         guard let pagingScrollView = self.pagingScrollView else { return }
         pagingScrollView.contentSize = CGSizeMake(pagingScrollView.frame.size.width * CGFloat(moments.count), view.frame.size.height)
         
-        for var i = 0; i < moments.count; i++ {
+        for i in 0...moments.count-1 {
             let moment = moments[i]
             
             let innerView = MomentView(moment: moment, frame: CGRectMake(pagingScrollView.frame.size.width * CGFloat(i) + scrollViewGutter, 0, view.frame.size.width, view.frame.size.height))
@@ -134,7 +134,7 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
         closeButton?.setTitle("+", forState: .Normal)
         closeButton?.titleLabel!.font = UIFont.systemFontOfSize(35, weight: UIFontWeightThin)
         closeButton?.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
-        closeButton?.addTarget(self, action: "closeButtonTouched:", forControlEvents: .TouchUpInside)
+        closeButton?.addTarget(self, action: #selector(closeButtonTouched(_:)), forControlEvents: .TouchUpInside)
         
         guard let closeButton = self.closeButton else { return }
         self.view.addSubview(closeButton)
@@ -145,7 +145,7 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
     
     // MARK: - UIScrollView Delegate
     public func scrollViewDidScroll(scrollView: UIScrollView) {
-        for var i = 0; i < innerViews.count; i++ {
+        for i in 0...innerViews.count-1 {
             innerScrollViews[i].contentOffset = CGPointMake((scrollView.contentOffset.x - innerViews[i].frame.origin.x) * -parallaxFactor, 0)
         }
         
