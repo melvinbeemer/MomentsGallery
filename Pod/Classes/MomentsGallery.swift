@@ -31,11 +31,6 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
     // Delegate
     weak public var delegate: MomentsGalleryDelegate?
     
-    // Device properties
-    final let screenFrame = UIScreen.mainScreen().bounds
-    var screenWidth: CGFloat { return screenFrame.size.width }
-    var screenHeight: CGFloat { return screenFrame.size.height }
-    
     // Interface elements
     var pagingScrollView: UIScrollView!
     var progressIndicatorView: UIView!
@@ -51,7 +46,6 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
     var innerScrollViews: [UIScrollView] = []
     
     // User settings
-    public var initialPageIndex: Int = 0
     public var scrollViewGutter: CGFloat = 2.5
     public var scrollViewBackgroundColor: UIColor = UIColor(red: 17/255, green: 17/255, blue: 17/255, alpha: 1)
     public var parallaxFactor: CGFloat = 0.25
@@ -76,24 +70,41 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
         setup()
     }
     
+    public override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(rotatedScreen), name: UIDeviceOrientationDidChangeNotification, object: nil)
+    }
+    
+    public override func viewWillDisappear(animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        NSNotificationCenter.defaultCenter().removeObserver(self, name: UIDeviceOrientationDidChangeNotification, object: nil)
+    }
+    
     public override func prefersStatusBarHidden() -> Bool {
         return true
     }
     
+    func rotatedScreen() {
+        pagingScrollView = nil
+        setup()
+    }
+    
     private func setup() {
-        pagingScrollView = UIScrollView(frame: screenFrame)
+        pagingScrollView = UIScrollView(frame: view.frame)
         pagingScrollView.frame.origin.x -= scrollViewGutter
         pagingScrollView.frame.size.width += scrollViewGutter * 2
         pagingScrollView.delegate = self
         pagingScrollView.pagingEnabled = true
         pagingScrollView.showsHorizontalScrollIndicator = false
         pagingScrollView.backgroundColor = scrollViewBackgroundColor
-        pagingScrollView.contentSize = CGSizeMake(pagingScrollView.frame.size.width * CGFloat(moments.count), screenHeight)
+        pagingScrollView.contentSize = CGSizeMake(pagingScrollView.frame.size.width * CGFloat(moments.count), view.frame.size.height)
         
         for var i = 0; i < moments.count; i++ {
             let moment = moments[i]
             
-            let innerView = MomentView(moment: moment, frame: CGRectMake(pagingScrollView.frame.size.width * CGFloat(i) + scrollViewGutter, 0, screenWidth, screenHeight))
+            let innerView = MomentView(moment: moment, frame: CGRectMake(pagingScrollView.frame.size.width * CGFloat(i) + scrollViewGutter, 0, view.frame.size.width, view.frame.size.height))
             
             pagingScrollView?.addSubview(innerView)
             innerViews.append(innerView)
@@ -115,7 +126,7 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
         self.view.addSubview(progressIndicatorView)
         
         // Setup close button)
-        closeButton = UIButton(frame: CGRectMake(screenWidth - 50, 0, 50, 50))
+        closeButton = UIButton(frame: CGRectMake(view.frame.size.width - 50, 0, 50, 50))
         closeButton.setTitle("+", forState: .Normal)
         closeButton.titleLabel!.font = UIFont.systemFontOfSize(35, weight: UIFontWeightThin)
         closeButton.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
@@ -123,7 +134,7 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
         self.view.addSubview(closeButton)
         
         // Stage
-        pagingScrollView.setContentOffset(CGPointMake(pagingScrollView.frame.size.width * CGFloat(initialPageIndex), 0), animated: false)
+        pagingScrollView.setContentOffset(CGPointMake(pagingScrollView.frame.size.width * CGFloat(currentPageIndex), 0), animated: false)
     }
     
     // MARK: - UIScrollView Delegate
