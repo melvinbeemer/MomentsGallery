@@ -32,10 +32,10 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
     weak public var delegate: MomentsGalleryDelegate?
     
     // Interface elements
-    var pagingScrollView: UIScrollView!
-    var progressIndicatorView: UIView!
-    var progressIndicatorInnerView: UIView!
-    var closeButton: UIButton!
+    var pagingScrollView: UIScrollView?
+    var progressIndicatorView: UIView?
+    var progressIndicatorInnerView: UIView?
+    var closeButton: UIButton?
     
     // Paging
     var currentPageIndex: Int = 0
@@ -93,12 +93,14 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
     
     private func setup() {
         pagingScrollView = UIScrollView(frame: view.frame)
-        pagingScrollView.frame.origin.x -= scrollViewGutter
-        pagingScrollView.frame.size.width += scrollViewGutter * 2
-        pagingScrollView.delegate = self
-        pagingScrollView.pagingEnabled = true
-        pagingScrollView.showsHorizontalScrollIndicator = false
-        pagingScrollView.backgroundColor = scrollViewBackgroundColor
+        pagingScrollView?.frame.origin.x -= scrollViewGutter
+        pagingScrollView?.frame.size.width += scrollViewGutter * 2
+        pagingScrollView?.delegate = self
+        pagingScrollView?.pagingEnabled = true
+        pagingScrollView?.showsHorizontalScrollIndicator = false
+        pagingScrollView?.backgroundColor = scrollViewBackgroundColor
+        
+        guard let pagingScrollView = self.pagingScrollView else { return }
         pagingScrollView.contentSize = CGSizeMake(pagingScrollView.frame.size.width * CGFloat(moments.count), view.frame.size.height)
         
         for var i = 0; i < moments.count; i++ {
@@ -106,31 +108,35 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
             
             let innerView = MomentView(moment: moment, frame: CGRectMake(pagingScrollView.frame.size.width * CGFloat(i) + scrollViewGutter, 0, view.frame.size.width, view.frame.size.height))
             
-            pagingScrollView?.addSubview(innerView)
+            pagingScrollView.addSubview(innerView)
             innerViews.append(innerView)
             innerScrollViews.append(innerView.scrollView)
         }
         
         self.view.addSubview(pagingScrollView)
         
-        
         // Setup pagingView
         progressIndicatorView = UIView(frame: CGRectMake(25, UIScreen.mainScreen().bounds.size.height - 25, UIScreen.mainScreen().bounds.size.width-50, 2))
-        progressIndicatorView.backgroundColor = UIColor(white: 1, alpha: 0.21)
-        progressIndicatorView.clipsToBounds = true
+        progressIndicatorView?.backgroundColor = UIColor(white: 1, alpha: 0.21)
+        progressIndicatorView?.clipsToBounds = true
         
+        guard let progressIndicatorView = self.progressIndicatorView else { return }
         progressIndicatorInnerView = UIView(frame: CGRectMake(0, 0, progressIndicatorView.frame.size.width / CGFloat(moments.count), progressIndicatorView.frame.size.height))
-        progressIndicatorInnerView.backgroundColor = UIColor(white: 1, alpha: 1)
+        progressIndicatorInnerView?.backgroundColor = UIColor(white: 1, alpha: 1)
+        
+        guard let progressIndicatorInnerView = self.progressIndicatorInnerView else { return }
         progressIndicatorView.addSubview(progressIndicatorInnerView)
         
         self.view.addSubview(progressIndicatorView)
         
         // Setup close button)
         closeButton = UIButton(frame: CGRectMake(view.frame.size.width - 50, 0, 50, 50))
-        closeButton.setTitle("+", forState: .Normal)
-        closeButton.titleLabel!.font = UIFont.systemFontOfSize(35, weight: UIFontWeightThin)
-        closeButton.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
-        closeButton.addTarget(self, action: "closeButtonTouched:", forControlEvents: .TouchUpInside)
+        closeButton?.setTitle("+", forState: .Normal)
+        closeButton?.titleLabel!.font = UIFont.systemFontOfSize(35, weight: UIFontWeightThin)
+        closeButton?.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
+        closeButton?.addTarget(self, action: "closeButtonTouched:", forControlEvents: .TouchUpInside)
+        
+        guard let closeButton = self.closeButton else { return }
         self.view.addSubview(closeButton)
         
         // Stage
@@ -143,6 +149,7 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
             innerScrollViews[i].contentOffset = CGPointMake((scrollView.contentOffset.x - innerViews[i].frame.origin.x) * -parallaxFactor, 0)
         }
         
+        guard let progressIndicatorView = self.progressIndicatorView, let progressIndicatorInnerView = self.progressIndicatorInnerView else { return }
         progressIndicatorInnerView.frame.size.width = (progressIndicatorView.frame.size.width / CGFloat(moments.count)) * ((scrollView.contentOffset.x / scrollView.frame.size.width) + 1)
     }
     
@@ -164,6 +171,7 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
 extension MomentsGallery {
     
     public func scrollToIndex(index: Int) {
+        guard let pagingScrollView = self.pagingScrollView else { return }
         pagingScrollView.setContentOffset(CGPointMake(pagingScrollView.frame.size.width * CGFloat(index), 0), animated: true)
     }
     
