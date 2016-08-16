@@ -132,7 +132,13 @@ public class MomentsGallery: UIViewController, UIScrollViewDelegate {
         // Setup close button)
         closeButton = UIButton(frame: CGRectMake(view.frame.size.width - 50, 0, 50, 50))
         closeButton?.setTitle("+", forState: .Normal)
-        closeButton?.titleLabel!.font = UIFont.systemFontOfSize(35, weight: UIFontWeightThin)
+        
+        if #available(iOS 8.2, *) {
+            closeButton?.titleLabel!.font = UIFont.systemFontOfSize(35, weight: UIFontWeightThin)
+        } else {
+            closeButton?.titleLabel!.font = UIFont.systemFontOfSize(35)
+        }
+        
         closeButton?.transform = CGAffineTransformMakeRotation(CGFloat(M_PI_4))
         closeButton?.addTarget(self, action: #selector(closeButtonTouched(_:)), forControlEvents: .TouchUpInside)
         
