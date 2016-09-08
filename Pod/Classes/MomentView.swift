@@ -57,7 +57,14 @@ class MomentView: UIView {
         
         if moment.title != nil {
             let titleLabel = UILabel(frame: CGRectMake(25, UIScreen.mainScreen().bounds.size.height - 74, UIScreen.mainScreen().bounds.size.width - 50, 15))
-            titleLabel.font = UIFont.systemFontOfSize(13, weight: UIFontWeightSemibold)
+            
+            if #available(iOS 8.2, *) {
+                titleLabel.font = UIFont.systemFontOfSize(13, weight: UIFontWeightSemibold)
+            }
+            else {
+                titleLabel.font = UIFont.boldSystemFontOfSize(13)
+            }
+            
             titleLabel.textColor = UIColor.whiteColor()
             titleLabel.text = moment.title
             self.addSubview(titleLabel)
@@ -65,7 +72,13 @@ class MomentView: UIView {
         
         if moment.text != nil {
             let textLabel = UILabel(frame: CGRectMake(25, UIScreen.mainScreen().bounds.size.height - 55, UIScreen.mainScreen().bounds.size.width - 50, 15))
-            textLabel.font = UIFont.systemFontOfSize(12, weight: UIFontWeightRegular)
+            if #available(iOS 8.2, *) {
+                textLabel.font = UIFont.systemFontOfSize(12, weight: UIFontWeightRegular)
+            }
+            else {
+                textLabel.font = UIFont.systemFontOfSize(12)
+            }
+            
             textLabel.textColor = UIColor.whiteColor()
             textLabel.text = moment.text
             self.addSubview(textLabel)
